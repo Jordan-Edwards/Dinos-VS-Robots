@@ -1,10 +1,13 @@
+from weapon import Weapon
+
+
 class Robot:
-    def __init__(self, name, health, power_level, weapon):
-        self.name = "name"
+
+    def __init__(self, name):
+        self.name = name
         self.health = int
         self.power_level = 1
-        self.weapon = (type, int)
+        self.weapon = Weapon
 
-    def robot_attack_dino(self, dinosuar):
-        pass
-
+        # def robot_attack_dino(self, dinosaur):
+        # pass
