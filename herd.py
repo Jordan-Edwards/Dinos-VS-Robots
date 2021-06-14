@@ -9,9 +9,9 @@ class Herd:
 
     def create_herd(self):
 
-        robot1 = Dinosaur("Mothra", 10)
-        robot2 = Dinosaur("Godzillia", 20)
-        robot3 = Dinosaur("King Ghidorah", 30)
+        robot1 = Dinosaur("Mothra", 25)
+        robot2 = Dinosaur("Godzillia", 50)
+        robot3 = Dinosaur("King Ghidorah", 75)
 
         self.dinosaurs.append(dino1)
         self.dinosaurs.append(dino2)
