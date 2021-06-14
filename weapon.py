@@ -4,6 +4,6 @@ class Weapon:
         self.attack_power = attack_power
 
     def weapon_type(self):
-        self.weapon_1 = ("", int)
-        self.weapon_2 = ("", int)
-        self.weapon_3 = ("", int)
+        self.weapon_1 = ("Upgraded Mecha-Fist", 25)
+        self.weapon_2 = ("Gauss Cannon", 50)
+        self.weapon_3 = ("BFG 9000", 99)

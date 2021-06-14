@@ -1,4 +1,4 @@
-class robot:
+class Robot:
     def __init__(self, name, health, power_level, weapon):
         self.name = "name"
         self.health = int
@@ -7,3 +7,4 @@ class robot:
 
     def robot_attack_dino(self, dinosuar):
         pass
+
