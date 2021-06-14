@@ -1,5 +1,4 @@
 class Weapon:
-
-    def __init__(self):
-        self.type = "BFG 9000"
-        self.attack_power = 50
+    def __init__(self, type, attack_power):
+        self.type = type
+        self.attack_power = attack_power
