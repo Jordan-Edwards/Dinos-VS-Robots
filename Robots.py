@@ -1,7 +1,9 @@
-class robots:
-    def __init__(self, health, power_level, weapon, attack_power):
-        self.health = 100
+class robot:
+    def __init__(self, name, health, power_level, weapon):
+        self.name = "name"
+        self.health = int
         self.power_level = 1
-        self.attack_power = 5
-        self.weapon = bool
+        self.weapon = (type, int)
 
+    def robot_attack_dino(self, dinosuar):
+        pass
