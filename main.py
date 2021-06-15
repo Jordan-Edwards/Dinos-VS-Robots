@@ -1,6 +1,11 @@
+import robot
+from weapon import Weapon
+from robot import Robot
+from dinosaur import Dinosaur
+from fleet import Fleet
+from herd import Herd
+from battlefield import Battlefield
 
-from battelfield import Battlefield
-
-if __name__ =="__main__":
-    battelfield_1 = Battlefield()
-    battelfield_1.start_battle()
+if __name__ == "__main__":
+    battlefield = Battlefield()
+    battlefield.start_battle()

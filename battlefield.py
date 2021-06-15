@@ -33,7 +33,7 @@ class Battlefield:
             self.pick_a_side()
 
 
-    def flip_coin(self) -> object:
+    def flip_coin(self):
         first_turn = random.randint(0,1)
         if first_turn == 0:
             print('Robots attack first')
@@ -51,7 +51,7 @@ class Battlefield:
 
                 if self.herd.dinosaurs[0].health <= 0:
                     print(f'{self.herd.dinosaurs[0].type} has been Knocked Out!')
-                    self.herd.dinosaurs.remove(self.heard.dinosaurs[0])
+                    self.herd.dinosaurs.remove(self.herd.dinosaurs[0])
                 elif self.fleet.robots[0].health <= 0:
                     print(f'{self.fleet.robots[0].health} has been Knocked Out!')
                     self.fleet.robots.remove(self.fleet.robots[0])

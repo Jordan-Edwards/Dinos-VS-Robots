@@ -14,7 +14,7 @@ class Robot:
             while True:
                 try:
                     attack_choice = int(input(
-                        f'Choose attack type: (0) {self.weapon_choice[0]}, (1) {self.weapon_choice[1]}, or (2) {self.weapon_choice[2]}.'))
+                        f'Choose attack type: (1) {self.weapon_choice[0]}, (2) {self.weapon_choice[1]}, or (3) {self.weapon_choice[2]}.'))
                 except ValueError:
                     continue
                 if attack_choice == 1:
@@ -26,6 +26,11 @@ class Robot:
                 elif attack_choice == 3:
                     print(f'{self.name} attacked {dinosaur_to_attack.type} with {self.weapon_choice[2]}')
                     break
+
+            self.power_level -= 10
+            dinosaur_to_attack.health -= self.weapon.attack_power
+            print(f'{self.name} power level is now {self.power_level}')
+            print(f'{dinosaur_to_attack.type} health is now {dinosaur_to_attack.health}')
 
             self.power_level -= 9
             dinosaur_to_attack.health -= self.weapon.attack_power

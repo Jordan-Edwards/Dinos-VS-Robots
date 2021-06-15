@@ -7,22 +7,21 @@ class Dinosaur:
         self.attack_power = attack_power
         self.attack_type = ('Gust', 'Hyperbeem', 'Thunder Strike')
 
-
-
     def attack_robot(self, robot_to_attack):
         if self.energy > 10:
             while True:
                 try:
-                    attack_type = int(input(f'Choose attack type: (1) {self.attack_type[0]}, (2) {self.attack_type[1]}, or (3) {self.attack_type[2]}.'))
+                    attack_choice = int(input(
+                        f'Choose attack type: (1) {self.attack_type[0]}, (2) {self.attack_type[1]}, or (3) {self.attack_type[2]}.'))
                 except ValueError:
                     continue
-                if attack_type == 1:
+                if attack_choice == 1:
                     print(f'{self.type} attacked {robot_to_attack.name} with {self.attack_type[0]}')
 
-                elif attack_type == 2:
+                elif attack_choice == 2:
                     print(f'{self.type} attacked {robot_to_attack.name} with {self.attack_type[1]}')
 
-                elif attack_type == 3:
+                elif attack_choice == 3:
                     print(f'{self.type} attacked {robot_to_attack.name} with {self.attack_type[2]}')
 
 
